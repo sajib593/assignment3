@@ -11,8 +11,9 @@
 </head>
 
 <body class="w-[90%] mx-auto">
-    <header class="w-full mb-10">
-        <div class="hidden md:block md:flex container navbar bg-base-100 bg-[#F85559;] md:mx-auto rounded-full md:px-5 ">
+    <header class="w-full mb-10 mx-auto">
+        <div
+            class="hidden md:block md:flex container navbar bg-base-100 bg-[#F85559;] md:mx-auto rounded-full md:px-5 ">
             <div class="navbar-start">
                 <div class="">
 
@@ -40,7 +41,7 @@
 
         <div class="md:hidden w-full navbar bg-base-100 flex justify-between">
             <div class="navbar-center">
-                
+
                 <img src="./images/logo.png" alt="">
                 <h2 class="font-bold text-2xl ml-5">Fruits</h2>
             </div>
@@ -54,18 +55,19 @@
                         </svg>
                     </label>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ml-10">
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ml-2">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
                         <li><a>All Fruits</a></li>
                         <div class="navbar-end">
-                <input class="border-x rounded-xl w-60 h-8 absolute px-5" type="text" placeholder="search here">
-                <i class="fa-solid fa-magnifying-glass relative mr-5"></i>
+                            <input class="border-x rounded-xl w-60 h-8 absolute px-5" type="text"
+                                placeholder="search here">
+                            <i class="fa-solid fa-magnifying-glass relative mr-5 mt-3 ml-1"></i>
 
-            </div>
+                        </div>
                     </ul>
-                    
+
                 </div>
             </div>
 
@@ -79,7 +81,7 @@
 
     <main>
         <!-- -----------Exotic tastes at your doorstep -->
-        <section>
+        <section class="mx-auto">
 
             <div class="mx-auto carousel w-full relative">
                 <div id="slide1" class="carousel-item relative w-full p-4 md:p-0 h-fit">
@@ -141,7 +143,7 @@
 
 
             <!-- ---------------Exotic tastes 4 pic------------- -->
-            <div class="hidden md:flex justify-center items-center gap-20 bg-white absolute ml-80 -mt-16">
+            <div class="hidden md:flex justify-center items-center gap-20 bg-white absolute ml-52 -mt-16">
                 <div>
                     <img src="./images/fruit1.png" alt="">
                     <p>Strawberry</p>
@@ -163,7 +165,7 @@
         <br>
 
         <!-- ----------------------------------------------------Deal of the day -------------------->
-        <section class="mb-16 mt-2 md:mt-32">
+        <section class="mb-16 mt-2 md:mt-32 mx-auto">
             <div class="flex flex-wrap flex-col w-full mx-auto p-4 md:p-0">
                 <div class="flex flex-wrap justify-between items-center p-4 md:p-0">
                     <div class="">
@@ -306,7 +308,8 @@
                                             <img src="./images/fruit7.png" alt="">
                                             <h3 class="font-bold text-lg">Orange</h3>
                                             <p class="py-4">Professional employees are there for you to pick the most
-                                                <br> amazing and fresh fruits.</p>
+                                                <br> amazing and fresh fruits.
+                                            </p>
                                             <div>
                                                 <i class="fa-solid fa-star text-red-400"></i>
                                                 <i class="fa-regular fa-star-half-stroke text-red-400"></i>
@@ -358,7 +361,8 @@
                                             <img src="./images/fruit8.png" alt="">
                                             <h3 class="font-bold text-lg">Red Dragon</h3>
                                             <p class="py-4">Professional employees are there for you to pick the most
-                                                <br> amazing and fresh fruits.</p>
+                                                <br> amazing and fresh fruits.
+                                            </p>
                                             <div>
                                                 <i class="fa-solid fa-star text-red-400"></i>
                                                 <i class="fa-regular fa-star-half-stroke text-red-400"></i>
@@ -408,7 +412,8 @@
                                             <img src="./images/fruit9.png" alt="">
                                             <h3 class="font-bold text-lg">Banana</h3>
                                             <p class="py-4">Professional employees are there for you to pick the most
-                                                <br> amazing and fresh fruits.</p>
+                                                <br> amazing and fresh fruits.
+                                            </p>
                                             <div>
                                                 <i class="fa-solid fa-star text-red-400"></i>
                                                 <i class="fa-regular fa-star-half-stroke text-red-400"></i>
@@ -435,7 +440,7 @@
 
 
         <!-- -----------------------------------------meet team section------------- -->
-        <section class="mb-20">
+        <section class="mb-20 mx-auto">
 
             <div class="carousel w-full">
                 <div class="carousel-item relative w-full">
@@ -501,13 +506,73 @@
                 </div>
             </div>
 
+            <br><br><br>
+
+            <!-- ----------------------meet team     --------------------------------------------hero----------- -->
+
+
+            <div class="hero min-h-screen" style="background-image: url(./images/banner1.png); ">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="">
+                        <h1 class="text-white text-3xl font-extrabold text-center">Meet the team section</h1>
+                        <h6 class="text-white text-center">Contrary to popular belief, is not simply random
+                            text. It has roots in a piece of classical <br>
+                            Latin literature from 45 BC, making it over 2000 years old.</h6>
+                        <div class="flex flex-col justify-center mt-20 items-center gap-5 md:flex-row md:gap-32">
+                            <div>
+                                <img src="./images/member1.png" alt="">
+                                <h2 class="text-white font-bold text-lg">Awlad Hossain</h2>
+                                <h6 class="text-white font-bold">Fruits Expert</h6>
+                                <div class="flex justify-center gap-3">
+                                    <i class="fa-brands fa-facebook text-red-300"></i>
+                                    <i class="fa-brands fa-twitter text-red-300"></i>
+                                    <i class="fa-brands fa-instagram text-red-300"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./images/member2.png" alt="">
+                                <h2 class="text-white font-bold text-lg">Safia Chowdhury</h2>
+                                <h6 class="text-white font-bold">Fruits Expert</h6>
+                                <div class="flex justify-center gap-3">
+                                    <i class="fa-brands fa-facebook text-red-300"></i>
+                                    <i class="fa-brands fa-twitter text-red-300"></i>
+                                    <i class="fa-brands fa-instagram text-red-300"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./images/member3.png" alt="">
+                                <h2 class="text-white font-bold text-lg">Rokib Hossain</h2>
+                                <h6 class="text-white font-bold">Fruits Expert</h6>
+                                <div class="flex justify-center gap-3">
+                                    <i class="fa-brands fa-facebook text-red-300"></i>
+                                    <i class="fa-brands fa-twitter text-red-300"></i>
+                                    <i class="fa-brands fa-instagram text-red-300"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./images/member4.png" alt="">
+                                <h2 class="text-white font-bold text-lg">Chaity</h2>
+                                <h6 class="text-white font-bold">Fruits Expert</h6>
+                                <div class="flex justify-center gap-3">
+                                    <i class="fa-brands fa-facebook text-red-300"></i>
+                                    <i class="fa-brands fa-twitter text-red-300"></i>
+                                    <i class="fa-brands fa-instagram text-red-300"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </section>
 
 
         <!-- ---------------------why choose us --------------------------------------------- -->
 
-        <section class="mb-20">
-            <div class="w-full">
+        <section class="mb-20 mx-auto">
+            <div class="w-full hidden md:block">
                 <div class="flex flex-wrap flex-col justify-center items-center">
                     <h2 class="font-bold text-3xl">Why Choose Us</h2>
                     <h6 class="text-center">Contrary to popular belief, is not simply random text. It has roots in a
@@ -595,7 +660,7 @@
             <!-- ------------------------------------------why choose us responsive------------ -->
 
 
-            <div class="w-full">
+            <div class="w-full flex flex-col flex-wrap mx-auto md:hidden">
                 <div class="flex flex-wrap flex-col justify-center items-center">
                     <h2 class="font-bold text-3xl">Why Choose Us</h2>
                     <h6 class="text-center">Contrary to popular belief, is not simply random text. It has roots in a
@@ -604,7 +669,7 @@
                 </div>
 
                 <br><br>
-                
+
                 <div class="flex flex-col justify-center items-center gap-10 p-4">
                     <div>
                         <img class="w-72 h-72" src="./images/whychoose1.png" alt="">
@@ -674,8 +739,8 @@
 
 
 
-                    
-                    
+
+
                 </div>
             </div>
         </section>
