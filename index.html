@@ -11,8 +11,8 @@
 </head>
 
 <body class="w-[90%] mx-auto">
-    <header class="w-full mb-10 hidden">
-        <div class="container navbar bg-base-100 bg-[#F85559;] mx-auto rounded-full px-10">
+    <header class="w-full mb-10">
+        <div class="hidden md:block md:flex container navbar bg-base-100 bg-[#F85559;] mx-auto rounded-full px-5 ">
             <div class="navbar-start">
                 <div class="">
 
@@ -34,6 +34,44 @@
 
             </div>
         </div>
+
+
+        <!-- -------------------------------------responsive header--------------- -->
+
+        <div class="md:hidden w-full navbar bg-base-100 flex justify-between">
+            <div class="navbar-center">
+                
+                <img src="./images/logo.png" alt="">
+                <h2 class="font-bold text-2xl ml-5">Fruits</h2>
+            </div>
+            <div class="flex justify-end navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                        <div class="navbar-end">
+                <input class="border-x rounded-xl w-60 h-8 absolute px-5" type="text" placeholder="search here">
+                <i class="fa-solid fa-magnifying-glass relative mr-5"></i>
+
+            </div>
+                    </ul>
+                    
+                </div>
+            </div>
+
+
+        </div>
+
     </header>
 
 
@@ -46,14 +84,15 @@
             <div class="mx-auto carousel w-full relative">
                 <div id="slide1" class="carousel-item relative w-full p-4 md:p-0 h-fit">
                     <img src="./images/banner1.png" class="w-full mx-auto" />
-                    <div class="absolute flex flex-wrap justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <div
+                        class="absolute flex flex-wrap justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" class="btn btn-circle">❮</a>
                         <div class="flex flex-wrap flex-col justify-center items-center">
                             <h1 class="text-white text-lg md:text-3xl font-bold text-center">Exotic tastes at your <br>
                                 doorstep</h1> <br>
                             <p class="text-white text-base md:text-lg">We supply highly quality organic products</p>
                             <button class="btn btn-error w-30">Shop now</button>
-                            
+
                         </div>
                         <a href="#slide2" class="btn btn-circle">❯</a>
                     </div>
@@ -125,7 +164,7 @@
 
         <!-- ----------------------------------------------------Deal of the day -------------------->
         <section class="mb-16">
-            <div>
+            <div class="flex flex-wrap mx-auto justify-between items-center p-4 md:p-0">
                 <div class="flex flex-wrap mx-auto justify-between items-center p-4 md:p-0">
                     <div class="">
                         <h3 class="text-3xl font-extrabold">Deal Of The Day</h3>
@@ -216,7 +255,8 @@
                                             <img class="h-40 w-40 " src="./images/fruit6.png" alt="">
                                             <h3 class="font-bold text-lg">Apples</h3>
                                             <p class="py-4">Professional employees are there for you to pick the most
-                                                <br> amazing and fresh fruits.</p>
+                                                <br> amazing and fresh fruits.
+                                            </p>
                                             <div>
                                                 <i class="fa-solid fa-star secondary text-red-400"></i>
                                                 <i class="fa-regular fa-star-half-stroke text-red-400"></i>
@@ -256,15 +296,17 @@
                                 </div>
                                 <div>
                                     <!-- The button to open modal -->
-                                    <label for="my_modal_6" class="btn text-red-400 btn border-none bg-white">Details</label>
+                                    <label for="my_modal_6"
+                                        class="btn text-red-400 btn border-none bg-white">Details</label>
 
-                                   
+
                                     <input type="checkbox" id="my_modal_6" class="modal-toggle" />
                                     <div class="modal">
                                         <div class="modal-box flex flex-col justify-center items-center">
                                             <img src="./images/fruit7.png" alt="">
                                             <h3 class="font-bold text-lg">Orange</h3>
-                                            <p class="py-4">Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+                                            <p class="py-4">Professional employees are there for you to pick the most
+                                                <br> amazing and fresh fruits.</p>
                                             <div>
                                                 <i class="fa-solid fa-star text-red-400"></i>
                                                 <i class="fa-regular fa-star-half-stroke text-red-400"></i>
@@ -303,18 +345,20 @@
                                     <i class="fa-regular fa-star text-red-400"></i>
                                     <i class="fa-regular fa-star text-red-400"></i>
                                 </div>
-                                
+
                                 <div>
                                     <!-- The button to open modal -->
-                                    <label for="my_modal_7" class="btn text-red-400 btn border-none bg-white">Details</label>
+                                    <label for="my_modal_7"
+                                        class="btn text-red-400 btn border-none bg-white">Details</label>
 
-                                   
+
                                     <input type="checkbox" id="my_modal_7" class="modal-toggle" />
                                     <div class="modal">
                                         <div class="modal-box flex flex-col justify-center items-center">
                                             <img src="./images/fruit8.png" alt="">
                                             <h3 class="font-bold text-lg">Red Dragon</h3>
-                                            <p class="py-4">Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+                                            <p class="py-4">Professional employees are there for you to pick the most
+                                                <br> amazing and fresh fruits.</p>
                                             <div>
                                                 <i class="fa-solid fa-star text-red-400"></i>
                                                 <i class="fa-regular fa-star-half-stroke text-red-400"></i>
@@ -351,18 +395,20 @@
                                     <i class="fa-regular fa-star text-red-400"></i>
                                     <i class="fa-regular fa-star text-red-400"></i>
                                 </div>
-                                
+
                                 <div>
                                     <!-- The button to open modal -->
-                                    <label for="my_modal_8" class="btn text-red-400 btn border-none bg-white">Details</label>
+                                    <label for="my_modal_8"
+                                        class="btn text-red-400 btn border-none bg-white">Details</label>
 
-                                   
+
                                     <input type="checkbox" id="my_modal_8" class="modal-toggle" />
                                     <div class="modal">
                                         <div class="modal-box flex flex-col justify-center items-center">
                                             <img src="./images/fruit9.png" alt="">
                                             <h3 class="font-bold text-lg">Banana</h3>
-                                            <p class="py-4">Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+                                            <p class="py-4">Professional employees are there for you to pick the most
+                                                <br> amazing and fresh fruits.</p>
                                             <div>
                                                 <i class="fa-solid fa-star text-red-400"></i>
                                                 <i class="fa-regular fa-star-half-stroke text-red-400"></i>
@@ -393,7 +439,8 @@
 
             <div class="carousel w-full">
                 <div class="carousel-item relative w-full">
-                    <img src="./images/banner1.png" class="h-[1200px] w-full md:w-full md:h-full mx-auto bg-[#121212b3] opacity-60" />
+                    <img src="./images/banner1.png"
+                        class="h-[1200px] w-full md:w-full md:h-full mx-auto bg-[#121212b3] opacity-60" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
 
                         <div class="mx-auto">
@@ -405,7 +452,8 @@
                                     Latin literature from 45 BC, making it over 2000 years old.</h6>
                             </div>
 
-                            <div class="flex flex-col flex-wrap justify-center items-center gap-5 md:flex-row md:gap-32">
+                            <div
+                                class="flex flex-col flex-wrap justify-center items-center gap-5 md:flex-row md:gap-32">
                                 <div>
                                     <img src="./images/member1.png" alt="">
                                     <h2 class="text-white font-bold text-lg">Awlad Hossain</h2>
@@ -547,7 +595,7 @@
 
 
 
-    <footer class="footer footer-center p-10 bg-neutral-400 text-base-content rounded">
+    <footer class="footer footer-center p-10 bg-neutral-400 text-base-content rounded mx-auto">
         <div class="flex gap-8">
             <img src="./images/logo.png" alt="">
             <h2 class="font-bold text-3xl text-white">Fruit Burst</h2>
